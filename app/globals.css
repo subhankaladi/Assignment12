@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+ 
+  font-size: 24px;
+  font-weight: bold;
+  padding: 30px;
+  
+ 
+}
+button{
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+  margin-top: 10px;
+ 
+}
+.spages{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
