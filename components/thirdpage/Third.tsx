@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import './Third.css';
 
 const Third: React.FC = () => {
@@ -45,7 +45,7 @@ const Third: React.FC = () => {
           Deep Learning, and Large Language Models, 
           he is driving innovation and AI education in Pakistan. 
           Skilled in advanced frameworks and technologies, 
-          he’s passionate about creating impactful, AI-powered solutions.
+          he passionate about creating impactful, AI-powered solutions.
         </p>
         {!isPlaying && (
           <button onClick={handlePlayClick} className="play-button">
