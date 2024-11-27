@@ -1,0 +1,128 @@
+/* Article Styling */
+article {
+    position: relative;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: none;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    transform-origin: center;
+    --img-scale: 1.001;
+    --title-color: black;
+    --link-icon-translate: -20px;
+    --link-icon-opacity: 0;
+}
+
+/* Flex Layout for Articles Section */
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-inline: auto;
+    max-width: 1200px;
+    padding: 60px 24px;
+}
+
+/* Article's Flexible Sizing */
+article {
+    flex: 1 1 calc(25% - 24px);
+    max-width: calc(25% - 24px);
+    min-width: 280px;
+    margin: 12px;
+}
+
+/* Title and Image Styling */
+article h2 {
+    margin: 0 0 18px 0;
+   
+    font-size: 22px;
+    font-weight: bolder;
+    letter-spacing: 0.06em;
+    transition: color 0.3s ease-out;
+    color: var(--title-color);
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+article img {
+    max-width: 100%;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Article Body Styling */
+.article-body {
+    padding: 24px;
+}
+
+.article-body p {
+    color: black;
+}
+
+/* Read More Link Styling */
+article a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+article a .icon {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    transform: translateX(var(--link-icon-translate));
+    opacity: var(--link-icon-opacity);
+    transition: all 0.3s;
+}
+
+article:has(:hover, :focus) {
+    --img-scale: 1.1;
+    --title-color: #28666e;
+    --link-icon-translate: 0;
+    --link-icon-opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, 
+                rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 960px) {
+    article {
+        flex: 1 1 calc(50% - 24px);
+        max-width: calc(50% - 24px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    article {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* Lead Mentor Title */
+.lead-mentor {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 34px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+/* Screen Reader Only */
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}

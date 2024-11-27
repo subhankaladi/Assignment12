@@ -1,0 +1,72 @@
+.th-main-section {
+    
+    position: relative; /* For absolute positioning of child elements */
+    
+    overflow: hidden; /* To prevent overflow from the background video */
+}
+.th-main-section{
+   
+    height: 100vh;
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    .sir-qasim-intro{
+        max-width: 500px;
+        h1{
+            font-size: 34px;
+            font-weight: bolder;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+
+.background-video {
+    position: absolute; /* Position the video absolutely */
+    top: 50%; /* Center it vertically */
+    left: 50%; /* Center it horizontally */
+    min-width: 100%; /* Make it cover the entire width */
+    min-height: 100%; /* Make it cover the entire height */
+    object-fit: cover; /* Cover the background without distortion */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    z-index: -1; /* Send video behind other content */
+    opacity: 50%;
+}
+
+.sir-qasim-video {
+    z-index: 1; /* Ensure the content is on top of the background video */
+    position: relative; /* For z-index to work */
+    video{
+        border-radius: 10%;
+        width: 500px;;
+    }
+    
+}
+
+.sir-qasim-intro {
+    max-width: 500px;
+    z-index: 1; /* Ensure the content is on top of the background video */
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-left: 390px;
+}
+
+.sir-qasim-intro h1 {
+    font-size: 34px;
+    font-weight: bolder;
+}
+
+.sir-qasim-intro p {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.248);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
+
+

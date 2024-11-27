@@ -1,0 +1,181 @@
+.LP-navbar{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 10px;
+    
+}
+.LP-inner-list{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    font-family: sans-serif;
+
+   
+}
+
+.Subhan-h2{
+    font-weight: bold;font-size: large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.lp-container {
+    display: flex;
+    height: 85vh;
+    width: 100%;
+  }
+  
+  /* Left Section */
+  .left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .left-section h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .left-section input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+  }
+  
+  .left-section button {
+    width: 50%;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  
+  
+  
+  /* Right Section */
+  .right-section {
+    height: 93.6vh;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-end; 
+  }
+  
+  .profile-image {
+    max-height: 100%;
+    object-fit: cover;
+    width: auto;
+
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .lp-container {
+      flex-direction: column;
+    }
+  
+    .left-section,
+    .right-section {
+      flex: none;
+      height: 50vh;
+    }
+  
+    .left-section input {
+      width: 90%;
+    }
+  
+    .left-section button {
+      width: 70%;
+    }
+  }
+  
+
+
+  .LP-button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  /* Background layer after the button */
+  .LP-button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0cf; /* Color equivalent to $color */
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  
+  /* Animation effect on hover */
+  .LP-button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #00a3cc; /* Darkened color */
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  
+  /* Hover state */
+  .LP-button:hover {
+    color: #fff;
+  }
+  
+  .LP-button:hover::before {
+    width: 100%;
+  }
+  
+
+  
+
+  .weird-input {
+    border: 2px solid #4caf50;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: transform 0.1s;
+  }
+  
+  .shake {
+    animation: shake 0.3s;
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  

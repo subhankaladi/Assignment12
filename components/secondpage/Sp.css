@@ -1,0 +1,73 @@
+/* Sp.css */
+
+.news-section {
+    padding: 20px;
+    text-align: center;
+    margin-top: 70px;
+ 
+  }
+  
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  .LGA{
+    font-size: 50px;
+  }
+  
+  .news-card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column; /* Card content ko vertical stack karega */
+  }
+  
+  .news-card:hover {
+    transform: scale(1.03); /* Hover effect */
+  }
+  
+  .news-card img {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Cover the entire card area */
+  }
+  
+  .news-content {
+    padding: 15px;
+    text-align: left;
+    flex-grow: 1; /* Make sure content takes available space */
+  }
+  
+  .news-content h3 {
+    font-size: 1.25em;
+    margin: 10px 0;
+  }
+  
+  .news-content p {
+    color: #555;
+    font-size: 1em;
+  }
+  
+  .news-content a {
+    display: inline-block; /* Makes link a block to set margin */
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    border: 1px solid #007bff; /* Add a border to the button */
+    padding: 5px 10px; /* Padding for the button */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition for background */
+  }
+  
+  .news-content a:hover {
+    background-color: #007bff; /* Background color on hover */
+    color: white; /* Text color on hover */
+  }
+
+  

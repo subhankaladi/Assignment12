@@ -1,0 +1,39 @@
+.contact-section {
+    display: flex;
+    justify-content: space-between; /* Distributes space between cards */
+    margin: 20px; /* Adds space around the contact section */
+    
+  }
+  
+  .card {
+    flex: 1; /* Makes each card take equal space */
+    margin: 0 10px; /* Adds space between cards */
+    padding: 20px; /* Adds padding inside cards */
+    border: 1px solid #ccc; /* Adds border to cards */
+    border-radius: 8px; /* Rounds the corners of cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle
+    colo shadow */
+    background-color: #f9f9f9; /* Light background color */
+    color: black;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px; /* Adds space below the heading */
+    color: black;
+  }
+  
+  .card p {
+    margin: 5px 0; /* Adds space between paragraphs */
+    color: black;
+  }
+  
+  .card a {
+    text-decoration: none; /* Removes underline from links */
+    color: #0070f3; /* Link color */
+    
+  }
+  
+  .card a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
+  
