@@ -11,6 +11,7 @@ import Link from 'next/link';
 import Third from '../thirdpage/Third';
 import Contact from '../secondpage/contact/Contact';
 import Mentor from '../mentor/Mentor';
+import Image from 'next/image';
 
 const Page: React.FC = () => {
 
@@ -76,10 +77,10 @@ const Page: React.FC = () => {
 
         <div className="my-intro-and-img">
           <div className="my-img">
-            <img src="/subhan-ab.png" alt="subhan's-photo" />
+            <Image src="/subhan-ab.png" alt="subhan's-photo" />
           </div>
           <div className="my-intro">
-          Welcome to our Generative AI website! Here, you'll find an overview of generative AI, the latest AI news, and an introduction to our Lead Mentor, an expert guiding us through this journey. Stay updated and explore the exciting world of generative AI with us!          </div>
+          Welcome to our Generative AI website! Here, you will find an overview of generative AI, the latest AI news, and an introduction to our Lead Mentor, an expert guiding us through this journey. Stay updated and explore the exciting world of generative AI with us!          </div>
         </div>
       </div>
       <hr />

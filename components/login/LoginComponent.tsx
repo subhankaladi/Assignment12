@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { signIn } from "next-auth/react";
 import "./login.css";
+import Image from "next/image";
 
 export default function SignInPage() {
   const [name, setName] = useState("");
@@ -42,7 +43,7 @@ export default function SignInPage() {
 
         {/* Right Section */}
         <div className="right-section">
-          <img src="/sk2.png" alt="Profile" className="profile-image" />
+          <Image src="/sk2.png" alt="Profile" className="profile-image" />
         </div>
       </div>
     </div>

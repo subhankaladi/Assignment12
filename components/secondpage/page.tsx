@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Sp.css';
+import Image from 'next/image';
 
 interface Article {
   title: string;
@@ -60,7 +61,7 @@ const Page: React.FC = () => { // Renamed to Page to match your file name
           <div className="news-grid">
             {articles.map((article, index) => (
               <div key={index} className="news-card">
-                {article.urlToImage && <img src={article.urlToImage} alt="News thumbnail" />}
+                {article.urlToImage && <Image src={article.urlToImage} alt="News thumbnail" />}
                 <div className="news-content">
                   <h3>{article.title}</h3>
                   <p>{article.description}</p>

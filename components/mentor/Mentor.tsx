@@ -1,5 +1,6 @@
 import React from 'react'
 import './Mentor.css'
+import Image from 'next/image'
 
 const Mentor = () => {
   return (
@@ -10,10 +11,10 @@ const Mentor = () => {
   <article>
     <div className="article-wrapper">
       <figure>
-        <img src="/sir-zia.jpg" alt="" />
+        <Image src="/sir-zia.jpg" alt="" />
       </figure>
       <div className="article-body">
-        <h2>Welcome to Pakistan's Hero</h2>
+        <h2>Welcome to Pakistans Hero</h2>
         <p>
 
 Meet Sir Zia  a visionary educator with Triple Masters Degrees. and has led top educators across Pakistan. With a passion for youth empowerment, he equips students with real-world skills through platforms like PIAIC, GIAIC, and Saylani, driving them toward future success.
@@ -29,7 +30,7 @@ Meet Sir Zia  a visionary educator with Triple Masters Degrees. and has led top 
 
     <div className="article-wrapper">
       <figure>
-        <img src="/sir-qasim.jpg" alt="" />
+        <Image src="/sir-qasim.jpg" alt="" />
       </figure>
       <div className="article-body">
         <h2>Welcome to Chief AI Officer</h2>
@@ -48,12 +49,12 @@ My Name Is Muhammad Qasim  My expertise includes Generative AI, Deep Learning, T
 
 <div className="article-wrapper">
   <figure>
-    <img src="/sir-ameen.jpg" alt="" />
+    <Image src="/sir-ameen.jpg" alt="" />
   </figure>
   <div className="article-body">
     <h2> Welcome to Ameen Alams World</h2>
     <p>
-    My name is Ameen Alam, And I'm Global AI & Cloud Education Leader | Internet-Scale Multi-Cloud Solutions Architect | Generative AI & Humanoid Robotics Visionary | Strategic Tech Innovation Pioneer    </p>
+    My name is Ameen Alam, And Im Global AI & Cloud Education Leader | Internet-Scale Multi-Cloud Solutions Architect | Generative AI & Humanoid Robotics Visionary | Strategic Tech Innovation Pioneer    </p>
     <a target='_blank' href="https://www.linkedin.com/in/ameen-alam/" className="read-more">
       Read more <span className="sr-only">about this is some title</span>
       
